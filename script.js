@@ -9,22 +9,51 @@ randomNum();
 
 //Next task i should go and make an array of objects. Each of these objects will be one sentence or string. 
 
-let advice = {
-    adv1: 'Get drunk',
-    adv2: 'Get Married',
-    adv3: 'Get a Job',
-    adv4: 'Probably call your mom',
-    adv5: 'Question all your life decisions',
-    adv6: 'DEFINATELY play the lotto',
-    adv7: 'leave me alone please im tired.',
-    adv8: 'go to the doctor for a checkup',
-    adv9: 'go get some sunlight you pale af',
-    adv10: 'go somewhere exotic'
+let id1 = {
+    advice: 'Get drunk'
 }
+
+let id2 = {
+    advice: 'Get Married'
+}
+
+let id3 = {
+    advice: 'Get a Job'
+}
+
+let id4 = {
+    advice: 'Probably call your mom'
+}
+
+let id5 = {
+    advice: 'Question all your life decisions'
+}
+
+let id6 = {
+    advice: 'DEFINATELY play the lotto'
+}
+
+let id7 = {
+    advice: 'leave me alone please im tired.'
+}
+
+let id8 = {
+    advice: 'go to the doctor for a checkup'
+}
+
+let id9 = {
+    advice: 'go get some sunlight you pale af'
+}
+
+let id10 = {
+    advice: 'go somewhere exotic'
+}
+
 
 let array = [];
 
-array.push(advice);
+array.push(id1.advice, id2.advice, id3.advice, id4.advice, id5.advice, id6.advice, id7.advice, id8.advice, id9.advice, id10.advice);
+
 
 for (let i = 0; i < array.length; i++) {
     let randomAdvice = Math.floor(Math.random() * 10) + 1;

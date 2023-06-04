@@ -1,60 +1,89 @@
-// Random number generator// First Piece of Data. 
-
-const randomNum = (num) => {
-    let x = Math.floor(Math.random(num) * 100)
-    console.log(`Your monthly lucky number is: ${x}`)
+const randomNum = () => {
+    let x = Math.floor(Math.random() * 100)
+    return x;
 }
 
-randomNum();
+console.log('Monthly Lucky number: ' + randomNum());
 
-//Next task i should go and make an array of objects. Each of these objects will be one sentence or string. 
+let advice = [
+    {
+        advice: 'Get drunk'
+    },
 
-let id1 = {
-    advice: 'Get drunk'
+    {
+        advice: 'Get Married'
+    },
+
+    {
+        advice: 'Get a Job'
+    },
+
+    {
+        advice: 'Probably call your mom'
+    },
+
+    {
+        advice: 'Question all your life decisions'
+    },
+
+    {
+        advice: 'DEFINATELY play the lotto'
+    },
+
+    {
+        advice: 'leave me alone please im tired.'
+    },
+
+    {
+        advice: 'go to the doctor for a checkup'
+    },
+
+    {
+        advice: 'go get some sunlight you pale af'
+    },
+
+    {
+        advice: 'go somewhere exotic'
+    },
+]
+
+const getRandomIndex = (arr) => {
+
+    const randomIndex = Math.floor(Math.random() * arr.length);
+
+    const item = arr[randomIndex].advice
+
+    return item
 }
 
-let id2 = {
-    advice: 'Get Married'
+const result = getRandomIndex(advice)
+console.log('You definately should: ' + result)
+
+
+let wordsArray = [
+    {
+        word: 'ciggarettes'
+    },
+    {
+        word: 'coffee'
+    },
+    {
+        word: 'negative people'
+    },
+    {
+        word: 'heights'
+    }
+];
+
+const getRandomIndex1 = (arr) => {
+
+    const randomIndex1 = Math.floor(Math.random() * arr.length);
+
+    const item1 = arr[randomIndex1].word
+
+    return item1
 }
 
-let id3 = {
-    advice: 'Get a Job'
-}
+const result1 = getRandomIndex1(wordsArray)
+console.log('You should stay away from: ' + result1)
 
-let id4 = {
-    advice: 'Probably call your mom'
-}
-
-let id5 = {
-    advice: 'Question all your life decisions'
-}
-
-let id6 = {
-    advice: 'DEFINATELY play the lotto'
-}
-
-let id7 = {
-    advice: 'leave me alone please im tired.'
-}
-
-let id8 = {
-    advice: 'go to the doctor for a checkup'
-}
-
-let id9 = {
-    advice: 'go get some sunlight you pale af'
-}
-
-let id10 = {
-    advice: 'go somewhere exotic'
-}
-
-
-let array = [];
-
-array.push(id1.advice, id2.advice, id3.advice, id4.advice, id5.advice, id6.advice, id7.advice, id8.advice, id9.advice, id10.advice);
-
-
-for (let i = 0; i < array.length; i++) {
-    let randomAdvice = Math.floor(Math.random() * 10) + 1;
-}
